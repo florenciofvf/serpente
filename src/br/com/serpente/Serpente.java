@@ -8,6 +8,7 @@ public class Serpente {
 	private THREAD thread;
 	private int intervalo;
 	private Cabeca cabeca;
+	private boolean demo;
 	private int tamanho;
 	private No cauda;
 	private No isca;
@@ -69,6 +70,24 @@ public class Serpente {
 	}
 
 	private void processar() {
+		if(demo && isca != null) {
+			if(cabeca.y > isca.y) {
+				cabeca.norte();
+			}
+			
+			if(cabeca.y < isca.y) {
+				cabeca.sul();
+			}			
+
+			if(cabeca.x > isca.x) {
+				cabeca.oeste();
+			}
+
+			if(cabeca.x < isca.x) {
+				cabeca.leste();
+			}
+		}
+		
 		cabeca.deslocar();
 		checarLimites();
 		checarIsca();
@@ -129,4 +148,11 @@ public class Serpente {
 		this.ouvinte = ouvinte;
 	}
 
+	public boolean isDemo() {
+		return demo;
+	}
+
+	public void setDemo(boolean demo) {
+		this.demo = demo;
+	}
 }

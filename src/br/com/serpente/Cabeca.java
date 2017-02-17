@@ -40,5 +40,4 @@ public class Cabeca extends No {
 			proximo.desenhar(g2);
 		}
 	}
-
 }

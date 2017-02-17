@@ -81,7 +81,6 @@ public class Territorio extends JPanel {
 	public Serpente getSerpente() {
 		return serpente;
 	}
-
 }
 
 class Posicao {

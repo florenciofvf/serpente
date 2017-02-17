@@ -30,5 +30,4 @@ public abstract class No implements Constantes {
 
 		return false;
 	}
-
 }

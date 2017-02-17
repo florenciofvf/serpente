@@ -19,7 +19,9 @@ public class Visao extends JFrame implements Ouvinte {
 	private final JLabel[] rotulos = new JLabel[] { new JLabel("COMANDOS"),
 			new JLabel("Seta acima"), new JLabel("Seta abaixo"),
 			new JLabel("Seta esquerda"), new JLabel("Seta direita"),
-			new JLabel("EspaÃ§o") };
+			new JLabel("Espaço"),
+			new JLabel("Enter")
+			};
 
 	public Visao() {
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -63,6 +65,11 @@ public class Visao extends JFrame implements Ouvinte {
 
 				case KeyEvent.VK_SPACE:
 					territorio.getSerpente().pausarReiniciar();
+					break;
+
+				case KeyEvent.VK_ENTER:
+					territorio.getSerpente().setDemo(!territorio.getSerpente().isDemo());
+					break;
 				}
 			}
 		});
