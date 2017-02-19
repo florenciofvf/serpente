@@ -3,12 +3,12 @@ package br.com.serpente;
 import java.awt.Graphics2D;
 
 public class Serpente {
+	private boolean demo = Constantes.INICIAR_MODO_DEMO;
 	private Territorio territorio;
 	private Ouvinte ouvinte;
 	private THREAD thread;
 	private int intervalo;
 	private Cabeca cabeca;
-	private boolean demo;
 	private int tamanho;
 	private No cauda;
 	private No isca;

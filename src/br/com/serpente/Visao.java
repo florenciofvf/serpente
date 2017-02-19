@@ -19,8 +19,8 @@ public class Visao extends JFrame implements Ouvinte {
 	private final JLabel[] rotulos = new JLabel[] { new JLabel("COMANDOS"),
 			new JLabel("Seta acima"), new JLabel("Seta abaixo"),
 			new JLabel("Seta esquerda"), new JLabel("Seta direita"),
-			new JLabel("Espaço"),
-			new JLabel("Enter")
+			new JLabel("EspaÃ§o (PAUSAR/REINICAR)"),
+			new JLabel("Enter (MODO DEMO)")
 			};
 
 	public Visao() {
@@ -88,7 +88,7 @@ public class Visao extends JFrame implements Ouvinte {
 	private void ini() {
 		territorio.getSerpente().ini();
 		territorio.criarIsca();
-		territorio.getSerpente().pausarReiniciar();
+		//territorio.getSerpente().pausarReiniciar();
 	}
 
 	@Override

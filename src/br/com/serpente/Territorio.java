@@ -58,6 +58,7 @@ public class Territorio extends JPanel {
 		Posicao pos = criarPosicaoAleatoriaEm(getLargura(), getAltura());
 
 		Pedaco pedaco = new Pedaco();
+		pedaco.cor = Constantes.CORES[random.nextInt(Constantes.CORES.length)];
 		pedaco.x = pos.x;
 		pedaco.y = pos.y;
 
