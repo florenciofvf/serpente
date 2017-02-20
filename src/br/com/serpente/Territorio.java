@@ -53,7 +53,7 @@ public class Territorio extends JPanel {
 	}
 
 	public void criarIsca() {
-		visao.setTitulo("Tamanho = " + serpente.getTamanho());
+		visao.setTitulo("Tamanho = " + serpente.getTamanho() + " de " + Constantes.COMPRIMENTO_SERPENTE);
 
 		Posicao pos = criarPosicaoAleatoriaEm(getLargura(), getAltura());
 

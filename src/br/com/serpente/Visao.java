@@ -1,6 +1,7 @@
 package br.com.serpente;
 
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.GridLayout;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
@@ -19,7 +20,7 @@ public class Visao extends JFrame implements Ouvinte {
 	private final JLabel[] rotulos = new JLabel[] { new JLabel("COMANDOS"),
 			new JLabel("Seta acima"), new JLabel("Seta abaixo"),
 			new JLabel("Seta esquerda"), new JLabel("Seta direita"),
-			new JLabel("EspaÃ§o (PAUSAR/REINICAR)"),
+			new JLabel("Espaço (PAUSAR/REINICAR)"),
 			new JLabel("Enter (MODO DEMO)")
 			};
 
@@ -69,6 +70,7 @@ public class Visao extends JFrame implements Ouvinte {
 
 				case KeyEvent.VK_ENTER:
 					territorio.getSerpente().setDemo(!territorio.getSerpente().isDemo());
+					fonteLabelDemo();
 					break;
 				}
 			}
@@ -88,7 +90,13 @@ public class Visao extends JFrame implements Ouvinte {
 	private void ini() {
 		territorio.getSerpente().ini();
 		territorio.criarIsca();
+		fonteLabelDemo();
 		//territorio.getSerpente().pausarReiniciar();
+	}
+	
+	private void fonteLabelDemo() {
+		JLabel label = rotulos[rotulos.length - 1];
+		label.setForeground(territorio.getSerpente().isDemo() ? Color.RED : Color.BLACK);
 	}
 
 	@Override
