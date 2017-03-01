@@ -3,7 +3,7 @@ package br.com.serpente;
 import java.awt.Color;
 import java.awt.Graphics2D;
 
-public abstract class No implements Constantes {
+public abstract class No {
 	protected No proximo;
 	protected Color cor;
 	protected int x;
