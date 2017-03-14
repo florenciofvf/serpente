@@ -20,7 +20,7 @@ public class Visao extends JFrame implements Ouvinte {
 	private final JLabel[] rotulos = new JLabel[] { new JLabel("COMANDOS"),
 			new JLabel("Seta acima"), new JLabel("Seta abaixo"),
 			new JLabel("Seta esquerda"), new JLabel("Seta direita"),
-			new JLabel("Espaço (PAUSAR/REINICAR)"),
+			new JLabel("EspaÃ§o (PAUSAR/REINICIAR)"),
 			new JLabel("Enter (MODO DEMO)")
 			};
 
