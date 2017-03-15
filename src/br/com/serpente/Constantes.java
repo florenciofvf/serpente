@@ -2,7 +2,11 @@ package br.com.serpente;
 
 import java.awt.Color;
 
-public interface Constantes {
+public class Constantes {
+	
+	private Constantes() {
+	}
+	
 	public static final boolean INICIAR_MODO_DEMO = true;
 	
 	public static final byte TOTAL_FASES = 20;

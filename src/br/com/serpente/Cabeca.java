@@ -2,6 +2,8 @@ package br.com.serpente;
 
 import java.awt.Graphics2D;
 
+import static br.com.serpente.Constantes.*;
+
 public class Cabeca extends No {
 	private int deltaX;
 	private int deltaY;

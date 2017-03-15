@@ -18,6 +18,7 @@ public class Serpente {
 	}
 
 	public void ini() {
+		thread = null;
 		intervalo = Constantes.INTERVALO_MOVIMENTO;
 		cabeca = new Cabeca();
 		cabeca.proximo = new Pedaco();
